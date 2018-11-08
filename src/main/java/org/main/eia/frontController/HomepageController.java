@@ -38,7 +38,7 @@ public class HomepageController {
 		model.addAttribute("name", user.getuName());
 		model.addAttribute("email", user.getEmailId());
 		System.out.println("user.getuName() "+user.getuName()+"  user.getEmailId()"+user.getEmailId());
-		return "hello";
+		return "dash";
 	}
 
 	/*@RequestMapping(value = "/login", method = RequestMethod.GET)

@@ -32,31 +32,7 @@
 }
 </style>
 <script>
-$(document)
-.ready(
-		function() {
-			var vid = document.getElementById("bgvid");
-			var pauseButton = document.querySelector("#polina button");
 
-			if (window.matchMedia('(prefers-reduced-motion)').matches) {
-			    vid.removeAttribute("autoplay");
-			    vid.pause();
-			    pauseButton.innerHTML = "Paused";
-			}
-
-			function vidFade() {
-			  vid.classList.add("stopfade");
-			}
-
-			vid.addEventListener('ended', function()
-			{
-			// only functional if "loop" is removed 
-			vid.pause();
-			// to capture IE10
-			vidFade();
-			}); 
-			
-		});
 
 document.getElementById("welcomeUsername").innerHTML = ${name};
 
@@ -139,7 +115,19 @@ WCAG general accessibility recommendation is that media such as background video
         </div>
         </div>
       </nav>
-
+<header id="dashboardHeader">
+<div class="home-inner">
+<div class="container" style="background-color: #F0FFFF">
+	hello
+	<div class="row">
+		<div class="col-xl-12" style="background-color:pink">
+			hello again
+		</div>
+	
+	</div>
+</div>
+</div>
+</header>
   
 <!-- nav bar ends here -->
 
