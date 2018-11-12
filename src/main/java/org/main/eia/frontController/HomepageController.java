@@ -35,9 +35,9 @@ public class HomepageController {
 	@PostMapping("myFormlogin")
 	public String sayHello(@RequestParam("usernameLogIn") String name, Model model) {
 		User user=userdao.getUserLogInDetails(name);
-		model.addAttribute("name", user.getuName());
-		model.addAttribute("email", user.getEmailId());
-		System.out.println("user.getuName() "+user.getuName()+"  user.getEmailId()"+user.getEmailId());
+		model.addAttribute("name", "Misbah");
+		model.addAttribute("email", "mishu7300@gmail.com");
+		//System.out.println("user.getuName() "+user.getuName()+"  user.getEmailId()"+user.getEmailId());
 		return "hello";
 	}
 
