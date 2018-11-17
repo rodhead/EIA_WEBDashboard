@@ -2,22 +2,20 @@ body {
   background: #333;
   color: #FFFF; }
 
-.navbar {
-  border-bottom: #8470FF 3px solid;
-  opacity: 0.8; }
+
 
 #home-section {
   background: url("../imgages/backg.jpg") no-repeat center top fixed;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 650px; }
+  min-height: 615px; }
   #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 700px; }
+    min-height: 615px; }
   #home-section .home-inner {
     padding-top: 150px; }
   #home-section .card-form {
